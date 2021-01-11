@@ -44,7 +44,7 @@ function Dashboard() {
           time: `${hour}:00h`,
           past: isBefore(compareDate, new Date()),
           appointment: response.data.find(
-            (a) => parseISO(a.date).toString() === compareDate.toString()
+            (a) => parseISO(a.date) === compareDate
           ),
         };
       });
