@@ -4,6 +4,7 @@ import { darken } from 'polished';
 export const Wrapper = styled.div`
   background: linear-gradient(-90deg, #7159c1, #ab59c1);
   padding-bottom: 15px;
+  height: 100%;
   /* background: #232129; */
 
   display: flex;

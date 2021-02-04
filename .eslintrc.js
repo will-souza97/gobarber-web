@@ -18,7 +18,18 @@ module.exports = {
   },
   plugins: ['react', 'jsx-a11y', 'import', 'react-hooks', 'prettier'],
   rules: {
+    camelcase: 'off',
+
+    'global-require': 'off',
+
     'prettier/prettier': 'error',
+
+    'import/prefer-default-export': 'off',
+
+    'no-console': ['error', { allow: ['tron'] }],
+    'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+    'no-param-reassign': 'off',
+    'no-underscore-dangle': 'off',
 
     'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx'] }],
     'react/jsx-one-expression-per-line': 'off',
@@ -27,16 +38,6 @@ module.exports = {
     'react-native/no-raw-text': 'off',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
-
-    'import/prefer-default-export': 'off',
-
-    'global-require': 'off',
-
-    'no-console': ['error', { allow: ['tron'] }],
-    'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
-    'no-param-reassign': 'off',
-    'no-underscore-dangle': 'off',
-    camelcase: 'off',
   },
   settings: {
     'import/resolver': {
